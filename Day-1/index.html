@@ -117,6 +117,14 @@
         lineHeight: 1.5,
       };
 
+      //Passing Dynamic Data
+      const welcome = 'Welcome to 30 Days Of React';
+      const title = 'Getting Started React';
+      const subtitle = 'JavaScript Library';
+      const firstName = 'Asabeneh';
+      const lastName = 'Yetayeh';
+      const date = 'Oct 2, 2020';
+
       const header = (
         <header
         // style={headerStyles}
@@ -124,14 +132,15 @@
         //   border: "2px solid orange",
         //   color: "black",
         //   fontSize: "18px",
-        // }}
+        //}}
         >
           <div className="header-wrapper">
-            <h1>Welcome to 30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Asabeneh Yetayeh</p>
-            <small>Oct 2, 2020</small>
+            // <h1>Welcome to 30 Days Of React</h1>
+            // <h2>Getting Started React</h2>
+            // <h3>JavaScript Library</h3>
+            // <p>Asabeneh Yetayeh</p>
+            // <small>Oct 2, 2020</small>
+            <h1>{welcome}</h1>
           </div>
         </header>
       );
