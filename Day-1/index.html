@@ -86,6 +86,10 @@
         text-align: center;
         line-height: 60px;
       }
+      .footer-ex {
+        border: 1px solid rebeccapurple;
+        background: yellow;
+      }
     </style>
   </head>
 
@@ -117,13 +121,17 @@
         lineHeight: 1.5,
       };
 
-      //Passing Dynamic Data
+      //Passing Dynamic Data Injecting a string to a JSX Element
       const welcome = 'Welcome to 30 Days Of React';
       const title = 'Getting Started React';
       const subtitle = 'JavaScript Library';
       const firstName = 'Asabeneh';
       const lastName = 'Yetayeh';
       const date = 'Oct 2, 2020';
+      const author = {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      };
 
       const header = (
         <header
@@ -139,11 +147,30 @@
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
             <p>
-              Instructor: {firstName} {lastName}
+              Instructor: {author.firstName} {author.lastName}
             </p>
             <small>Date: {date}</small>
           </div>
         </header>
+      );
+      // Injecting number into JSX elements
+      const numOne = 3;
+      const numTwo = 2;
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+        </p>
+      );
+
+      const yearBorn = 1820;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - yearBorn;
+      const personAge = (
+        <p>
+          {' '}
+          {author.firstName} {author.lastName} is {age} years old
+        </p>
       );
       // or we can write it this way
 
@@ -158,7 +185,7 @@
       // };
 
       // JSX element for the main part of the website
-      const main = (
+      /*  const main = (
         <main
         // style={mainStyle}
         >
@@ -171,6 +198,28 @@
             </ul>
           </div>
         </main>
+      ); */
+
+      // JSX element, main
+      const techs = ['HTML', 'CSS', 'JavaScript'];
+      const techsFormatted = techs.map(tech => <li key={tech}>{tech}</li>);
+
+      // JSX element, main
+      const main = (
+        <main>
+          <div className="main-wrapper">
+            <p>
+              Prerequisite to get started{' '}
+              <strong>
+                <em>react.js</em>
+              </strong>
+              :
+            </p>
+            <ul>{techsFormatted}</ul>
+            {result}
+            {personAge}
+          </div>
+        </main>
       );
 
       //Footer Style
@@ -179,12 +228,33 @@
       // };
 
       // JSX element for the footer part of the website
+
+      const copyRight = 'Copyright 2020';
+      //For Exercise
+      //  Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable
+      const user = {
+        name: 'Vaibhav Tyagi',
+        country: 'India',
+        title: 'Software Engineer',
+        gender: 'Male',
+        email: 'Vaibhav@gmail.com',
+        phoneNumber: '012345',
+      };
+
       const footer = (
         <footer
         //  style={footerStyle}
         >
           <div className="footer-wrapper">
-            <p>Copyright 2020</p>
+            <p>{copyRight}</p>
+            <div className="footer-ex">
+              <h1>He is {user.name}</h1>
+              <p> from {user.country}</p>
+              <p>, is a {user.title}</p>
+              <p> , gender is {user.gender}</p>
+              <p> , his email address is {user.email}</p>
+              <p> and his phone number is {user.phoneNumber}</p>
+            </div>
           </div>
         </footer>
       );
