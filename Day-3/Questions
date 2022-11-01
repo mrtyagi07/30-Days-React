@@ -1,0 +1,21 @@
+-----------------------------------Exercises: Level 1--------------------------------------------
+
+1. What is module?
+   The introduction of modularity allowed programmers to reuse prewritten code with new applications.
+   Modules were created and bundled with compilers, in which each module performed a business or routine operation
+   within the program.
+
+2. What is pacakage?
+   The term "package" is used to describe code that's been made publicly available. A package can contain a single file or many files of code. Generally speaking, a package helps you to add some functionality to your application.
+
+3. What is the difference between a module and a package.
+   A module is a single JavaScript file that has some reasonable functionality. A package is a directory with one or more modules inside of it and a package.json file which has metadata about the package.
+
+4. What is npm?
+   npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry
+
+5. What is webpack?
+   https://www.freecodecamp.org/news/an-intro-to-webpack-what-it-is-and-how-to-use-it-8304ecdc3c60/
+
+6. What are the files and folders inside a project folder(package.json, package-lock.json or yarn.lock, .gitignore node_modules and public)?
+   https://www.robinwieruch.de/react-folder-structure/
