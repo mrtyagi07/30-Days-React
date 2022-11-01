@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8a2dd04b.css",
+    "main.js": "/static/js/main.c8d5e46f.js",
+    "static/media/minh-pham-HI6gy-p-WBI-unsplash.jpg": "/static/media/minh-pham-HI6gy-p-WBI-unsplash.db0923963e3ebf656483.jpg",
+    "index.html": "/index.html",
+    "main.8a2dd04b.css.map": "/static/css/main.8a2dd04b.css.map",
+    "main.c8d5e46f.js.map": "/static/js/main.c8d5e46f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a2dd04b.css",
+    "static/js/main.c8d5e46f.js"
+  ]
+}
