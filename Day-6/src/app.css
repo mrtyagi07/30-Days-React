@@ -1,8 +1,16 @@
-body {
+/* body {
   padding: 0 84px;
-}
+} */
 
 img {
   width: 20%;
   border-radius: 50%;
+}
+.even {
+  background-color: aqua;
+  color: brown;
+}
+
+div {
+  color: aqua;
 }
