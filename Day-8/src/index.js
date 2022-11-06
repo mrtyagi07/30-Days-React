@@ -202,9 +202,18 @@ class App extends React.Component {
     alert('Welcome to 30 Days Of React Challenge, 2020');
   };
   changeBackground = () => {
-    document.body.style.backgroundColor = 'rgb(0 0 0)';
-    document.body.style.color = 'white';
-    this.setState({ mode: this.state.mode });
+    if (this.state.mode === 'light') {
+      document.body.style.backgroundColor = 'rgb(0 0 0)';
+      document.body.style.color = 'white';
+      document.querySelector('.header-wrapper').style.backgroundColor = 'black';
+      this.setState({ mode: 'dark' });
+    }
+    if (this.state.mode === 'dark') {
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'black';
+      document.querySelector('.header-wrapper').style.backgroundColor = 'aqua';
+      this.setState({ mode: 'light' });
+    }
   };
   render() {
     const data = {
