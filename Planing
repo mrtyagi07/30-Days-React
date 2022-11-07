@@ -1,0 +1,8 @@
+Spri#c2410cng(March-June) -
+Summer(June-SEPT) - #8b5cf6
+Autumn(SEPT-DEC) - #c026d3
+Winter(DEC-MARCH) - #65a30d
+
+1. By default color theme will show as current browser month
+2. User Pass Date and according to the date it will change the color
+3. There will be 4 Buttons for season if someone want to change the theme according to seasons

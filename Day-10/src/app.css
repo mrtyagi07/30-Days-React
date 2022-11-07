@@ -1,0 +1,13 @@
+html {
+  /* font-size: 10px; */
+  box-sizing: border-box;
+  padding: 0 84px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+}
