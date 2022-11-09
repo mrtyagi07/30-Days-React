@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+}
+
+.inputField {
+  display: grid;
+  gap: 10;
+  margin: 50px;
+  padding: 20px 30px;
+  font-size: 32px;
+  font-weight: 900;
+  width: 50%;
+  row-gap: 20px;
+}
+input {
+  width: 500px;
+  height: 50px;
+}
